@@ -1,0 +1,6 @@
+*.js
+*.js.map
+node_modules/**
+
+!node_modules/typescript/lib.d.ts
+!systemjs.config.js
