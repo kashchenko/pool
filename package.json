@@ -1,0 +1,24 @@
+{
+	"name" : "pool",
+	"version" : "1.0.0",
+	"description": "Funny creatures simulator, with purpose to learn systemjs, corejs and other cool stuff",
+	"license" : "ISC",
+	"dependencies" : {
+		"systemjs": "0.19.27",
+		"core-js": "^2.4.0"
+	},
+	"devDependencies": {
+		"concurrently": "^2.0.0",
+		"lite-server": "^2.2.0",
+		"typescript": "^1.8.10",
+		"typings": "^1.0.4"
+	},
+	"scripts":{
+		"start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+		"lite": "lite-server",
+		"postinstall": "typings install",
+		"tsc": "tsc",
+		"tsc:w": "tsc -w",
+		"typings": "typings"
+	}
+}
